@@ -3,6 +3,7 @@ layout: post
 title: Universal JSONDecoder
 subtitle: Handling several cases in json keys simultaneously
 gh-repo: Nekitosss/AnyCodingKey
+gh-badge: [follow]
 bigimg: /img/2019-04-28-any-codable/encoding-decoding.png
 tags: [swift, ios, foundation]
 comments: true

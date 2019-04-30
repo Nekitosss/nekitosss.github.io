@@ -63,6 +63,12 @@ hr.small {
   padding: 15px inherit;
 }
 
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
 .hideme {
   display: none;
 }
