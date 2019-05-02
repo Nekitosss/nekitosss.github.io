@@ -22,7 +22,7 @@ In this tutorial, the following library features will be considered:
 
 The application will consist of the following main components: `ViewController`, `Router`, `Presenter`, `Networking` - these are fairly common components in any iOS application.
 
-// Тут будет рисуночек
+![Component Structure](/img/ditranquillity-tutorial/component-structure.gif){: .center-image }
 
 `ViewController` and `Router` will be injected into each other cyclically.
 
@@ -94,12 +94,9 @@ class ViewController: UIViewController {
 }
 ```
 
-Заметьте, что во все классы внедряются объекты, скрытые за протоколами. В этом одна из основных задачь внедрения зависимостей - сделать зависимости не от реализаций, а от интерфейсов. Это поможет в будущем предоставить резные реализации протоколов для переиспользования или тестирования компонентов.
 Notice that objects embedded in classes are hidden behind protocols. This is one of the main tasks of dependency injection - to make dependencies not on implementations, but on interfaces. This will help in the future to provide different implementations of protocols for reuse or component testing.
 
 ### Dependency injection (finally)
-
-После того, как все компоненты системы созданы, приступим к связи объектов между собой. В DITranquillity отправной точной является `DIContainer`, который добавляет в себя регистрации с помощью метода `container.register(...)`. Для разделения зависимостей на части используются `DIFramework` и `DIPart`, которые необходимо реализовать. Для удобства создадим только один класс `ApplicationDependency`, который будет реализовывать `DIFramework` и будет служить местом регистраций всех зависимостей. Интерфейс `DIFramework` обязывает реализовать только один метод - `load(container:)`.
 
 After all, the components of the system are created, we proceed to the connection of objects with each other. In DITranquility, the starting point is `DIContainer`, which adds registrations using the `container.register(...)` method. To separate dependencies into parts, `DIFramework` and `DIPart` are used, which must be implemented. For convenience, we will create only one `ApplicationDependency` class that will implement `DIFramework` and will serve as a place for registering all dependencies. The `DIFramework` interface requires only one method to be implemented - `load(container:)`.
 
