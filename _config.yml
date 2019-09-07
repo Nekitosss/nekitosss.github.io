@@ -1,250 +1,268 @@
-# --- General options --- #
+# Config
+# ========================================================================================
 
-# url is the full website URL
-# baseurl is the website's URL without the hostname
+# IMPORTANT: Set the URL of your site.
+# Set to https://<username>.github.io when hosting on GitHub Pages
+# (unless you are using a custom domain).
+url:                   https://nekitosss.github.io
 
-# If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://nekitosss.github.io"
-baseurl: ""
+# IMPORTANT: Set The "base URL" of your site.
+#
+# When hosting your site in a subdirectory of a server, set to /<name of directory>
+# (with leading /, but without the < >)
+# Use the empty string '' otherwise.
+#
+# When using GitHub Pages, set to '' when hosting a user- or organization page,
+# i.e. when the name of the repository looks like <username>.github.io.
+# Otherwise, set to /<name of repository> (with leading /, but without the < >).
+baseurl:               ''
 
-title: Patskov Tech Blog
+# Language of your content in 2-letter code, e.g.: en, de.
+# You may also provide a location, e.g.: en-us, de_AT.
+lang:                  en, ru
 
-# Short description of your site
-description: Developer thougts
+# The title of your blog. Used in the sidebar and the browser tab.
+title:                 Swift&Smoothie
 
-# --- Navigation bar options --- #
+# A short description (~150 chars) of the page used for the meta description tag.
+# Can use markdown, but no more than one paragraph (enforced by `>`)
+description:           >
+  A Jekyll theme with JavaScript powers. "Best Theme by a Mile".
+  Combines the best of static sites and modern web apps.
+  Open `_config.yml` to edit this text.
 
-# List of links in the navigation bar
-# navbar-links:
-#   About Me: "aboutme"
-#   Resources:
-#     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-#     - Learn markdown: "http://www.markdowntutorial.com/"
-#     - GitHub Pages: "https://pages.github.com/"
-#   Author's home: "http://deanattali.com"
+# A shorter description for the sidebar.
+tagline:               >
+  Personal blog about programming, travel and life in general.
 
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/swift-og.png"
+# A list of keywords for your blog
+keywords:              [swift,blog,ios,macos,objectivec]
 
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
-# title-img: /path/to/image
+# Used by jekyll-seo-tag...
+logo:                  /img/swift-og.png
 
-# --- Background colour/image options --- #
-
-# Personalize the colors in your website. Colour values can be any valid CSS colour
-
-navbar-col: "#F5F5F5"
-navbar-text-col: "#404040"
-navbar-children-col: "#F5F5F5"
-page-col: "#FFFFFF"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#F5F5F5"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-
-# Alternatively, the navbar, footer, and page background can be set to use background images
-# instead of colour
-
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
-# page-img: "/img/bgimage.png"
-
-# --- Footer options --- #
-
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
+# This should be the same author as first entry in `_data/authors.yml`.
+# Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
 author:
-  name: Nikita Patskov
+  name:                 Nikita Patskov
+  email:                patskovn@yahoo.com
 
-# Select your active Social Network Links.
-# Uncomment the links you want to show in the footer and add your information to each link.
-# You can reorder the items to define the link order.
-# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
-social-network-links:
-  rss: true
-  email: "patskovn@yahoo.com"
-  github: Nekitosss
-  twitter: NikitkaPa
-#  reddit: yourname
-#  google-plus: +DeanAttali
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
+# This text will appear in a `<small>` tag in the footer of every page.
+copyright:             © 2019. All rights reserved.
 
-# Select which share links to show in posts
-share-links-active:
-  twitter: true
-  linkedin: false
-  github: true
-  twitter: true
+# Add links to the footer.
+# Typically you'll want to link to your impress, cookies or privacy policy, etc.
+# legal:
+#   - title:             Impress
+#     href:              /impress/
+#   - title:             Cookies Policy
+#     href:              /cookies-policy/
 
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-# url-pretty: "MyWebsite.com"
+# Format of the permalinks
+permalink:             pretty
 
-# --- Web Statistics Section --- #
+# Pagination configuration (used by the `blog` layout)
+paginate:              10
+paginate_path:         /page-:num/
 
-# Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
 
-# Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+# Customizaton
+# ========================================================================================
 
-# Google Tag Manager ID
-#gtm: ""
+# Sidebar image and theme color of the site.
+accent_image:          /assets/img/sidebar-bg.jpg
+accent_color:          '#4fb1ba'
 
-# Matomo (aka Piwik) Web statistics
-# Uncomment the following section to enable Matomo. The opt-out parameter controls
-# whether or not you want to allow users to opt out of tracking.
+# The string encoding which fonts to fetch from Google Fonts.
+# See: <https://qwtel.com/hydejack/docs/configuration/>
+google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
 
-#matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true
+# The text font. Expects a string that is a valid CSS font-family value.
+font:                  Noto Sans, Helvetica, Arial, sans-serif
 
-# --- Comments --- #
+# The font used for headings. Expects a string that is a valid CSS font-family value.
+font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus: ""
-# If you want to use just-comments fill with the API Key
-#just-comments: "ABCD-EFGH-IJKL"
+# 3rd Party Integrations
+# ----------------------------------------------------------------------------------------
 
-# To use Facebook Comments, fill in a Facebook App ID
-# fb_comment_id: ""
+# Set your Google Analytics id to receive `pageview` events.
+# To remove Google Anaylics from your page, remove the line below.
+google_analytics:      UA-147221110-1
 
-# Staticman support
-staticman:
-  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
-  branch     : # eg. "master" If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-  endpoint   : # URL of your own deployment (with trailing slash) (will fallback to a public GitLab instance)
-  reCaptcha:
-    # reCaptcha for Staticman (OPTIONAL)
-    # If you use reCaptcha, you must also set these parameters in staticman.yml
-    siteKey  : # Use your own site key, you need to apply for one on Google
-    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
+# Setting a disqus shortname will enable the comment section on
+# pages with `comments: true` in the front matter.
+# disqus:                <disqus_shortname>
 
-# --- Misc --- #
+# Setting a tinyletter username will enable the newsletter subscription box.
+# tinyletter:            <tinyletter_username>
 
-# Facebook App ID
-# fb_app_id: ""
+# Hydejack Settings
+# ----------------------------------------------------------------------------------------
+# These settings are specific to Hydejack.
 
-# Excerpt Word Length
-# Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
+hydejack:
+  # Configure the order of complementary content on blog posts
+  post_addons:         [about, newsletter, related]
 
-# Character used to separate site title and description in HTML document title
-# and RSS feed title
-title-separator: "-"
+  # Configure the order of complementary content on project pages
+  project_addons:      [about, newsletter, other]
 
-# --- Don't need to touch anything below here (but you can if you want) --- #
+  # If you do not use Google Fonts, set to `true`.
+  no_google_fonts:     false
 
-# Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
-markdown: kramdown
-highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
+  # Set to `true` if you don't want to show an icon indicating external links
+  no_mark_external:    false
 
-kramdown:
-  input: GFM
+  # Set to `true` if third party plugins fail to work with dynamically loaded pages
+  no_push_state:       false
 
-# Default YAML values (more information on Jekyll's site)
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
-  -
-    scope:
-      path: "" # all files
-    values:
-      layout: "page"
-      show-avatar: true
+  # Set to `true` if you want to disable the drawer
+  no_drawer:           false
 
-# Use tags index page and make tags on each post clickable
-link-tags: true
+  # Set to `true` if you do not want parts of the css inlined in <head/>
+  # This *may* be benefitial when serving the site over HTTP/2.
+  no_inline_css:       false
 
-# Exclude these files from production site
+  # Code blocks and tables "break" the layout by spanning the full available width.
+  # Set this to true if you want them to be the same width as other content.
+  no_break_layout:     false
+
+  # Set to `true` if you do not want to expose your resume and projects
+  # in machine-readable formats.
+  no_structured_data:  false
+
+  # You can set this to `true` if you don't want to set the `theme-color` meta tag,
+  # This only affects the meta tag, not the color specified in the app manifest.
+  no_theme_color:      false
+
+  # Set to `true` when building with the `--lsi` option
+  use_lsi:             false
+
+  # When using Google Analytics, set to `true` to display a cookie notice banner.
+  # When enabled, no user-related data will be stored until the user gives consent.
+  cookies_banner:      false
+
+
+# Collections
+# ========================================================================================
+
+collections:
+  featured_categories:
+    permalink:         /category/:name/
+    output:            true
+
+  featured_tags:
+    permalink:         /tag/:name/
+    output:            true
+
+  projects:
+    permalink:         /projects/:path/
+    output:            true
+
+
+# File inclusion/exclusion
+# ========================================================================================
+
 exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Dockerfile
+  - vendor
   - Gemfile
   - Gemfile.lock
-  - LICENSE
-  - README.md
-  - Vagrantfile
+  - node_modules
+  - package.json
+  - package-lock.json
+include:
+  - LICENSE.md
 
-# prose.io config
-prose:
-  rooturl: '_posts'
-  media: 'img'
-  ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "image"
-        field:
-          element: "text"
-          label: "Image"
-          help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
+
+# Plugins and Plugin Configuration
+# ========================================================================================
 
 plugins:
+  # - jekyll-avatar
+  # - jekyll-default-layout
+  - jekyll-feed
+  # - jekyll-gist
+  # - jekyll-optional-front-matter
   - jekyll-paginate
+  # - jekyll-readme-index
+  # - jekyll-redirect-from
+  - jekyll-relative-links
+  # - jekyll-remote-theme
+  - jekyll-seo-tag
   - jekyll-sitemap
+  # - jekyll-titles-from-headings
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+# Theme
+# ---------------------------------------------------------------------------------------
+
+# theme: jekyll-theme-hydejack
+# remote_theme: qwtel/hydejack@gem
+
+# SEO Tag
+# ---------------------------------------------------------------------------------------
+
+# Where you proof that you own this site (used by jekyll-seo-tag)
+# google_site_verification: <verification-id>
+# -- or --
+# webmaster_verifications:
+#   google:              <verification-id>
+#   bing:                <verification-id>
+#   alexa:               <verification-id>
+#   yandex:              <verification-id>
+
+# Used for Twitter cards
+# twitter:
+#   username:            <shortname>
+
+# Used for Facebook open graph
+# facebook:
+#   app_id:              <id>
+#   publisher:           <id>
+#   admins:              <id>
+
+# Used on index and about sites
+# social:
+#   name:                <firstname> <lastname>
+#   links:
+#     - https://twitter.com/<username>
+#     - https://github.com/<username>
+
+
+# Other Plugins
+# ---------------------------------------------------------------------------------------
+
+optional_front_matter:
+  remove_originals:    true
+
+readme_index:
+  remove_originals:    true
+
+relative_links:
+  collections:         true
+
+titles_from_headings:
+  strip_title:         true
+  collections:         true
+
+kramdown:
+  footnote_backlink:   '&#x21a9;&#xfe0e;'
+  math_engine:         mathjax
+  math_engine_opts:
+    preview:           true
+    preview_as_code:   true
+
+compress_html:
+  comments:            ["<!-- ", " -->"]
+  clippings:           all
+  endings:             all
+  ignore:
+    envs:              [development]
+
+sass:
+  style:               compressed
+
+# If you are upgrading form v5 (or earlier), uncomment the lines below,
+# so that the location of the feed XML stays the same.
+# feed:
+#   path:                atom.xml

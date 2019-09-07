@@ -2,7 +2,7 @@
 layout: post
 title: Whats behind swift generic system?
 subtitle: Swift under the hood
-tags: [swift, ios, foundation]
+tags: [swift, iOS, foundation]
 comments: true
 ---
 
