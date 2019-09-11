@@ -5,6 +5,7 @@ subtitle: Resolve dependencies easily with lightweight dependency framework
 gh-repo: ivlevAstef/DITranquillity
 gh-badge: [star, fork, follow]
 tags: [swift, dependency injection]
+categories: [programming]
 comments: true
 ---
 
