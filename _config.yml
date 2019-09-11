@@ -70,7 +70,7 @@ paginate_path:         /page-:num/
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /img/main/coffee-mac-strait.jpg
 accent_color:          '#4fb1ba'
 
 # The string encoding which fonts to fetch from Google Fonts.
@@ -82,6 +82,14 @@ font:                  Noto Sans, Helvetica, Arial, sans-serif
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+
+menu:
+    - title: Programming
+      url: /_posts/programming/
+    - title: Lifestyle
+      url: /_posts/lifestyle/
+    - title: About
+      url: /_posts/about/
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------

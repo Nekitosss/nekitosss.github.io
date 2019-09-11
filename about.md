@@ -16,6 +16,7 @@ a showcase for your projects, and a resume that is well-integrated with the desi
 > Your presence on the web --- A [blog], a [portfolio] and a [resume].
 {:.lead}
 
+asdasd
 ## Download
 There are two versions of **Hydejack**: The *free version* includes basic blogging functionality,
 as did previous versions of the theme.
