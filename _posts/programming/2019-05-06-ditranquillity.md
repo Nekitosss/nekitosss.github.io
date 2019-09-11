@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: list
 title: DITranquillity tutorial
 subtitle: Resolve dependencies easily with lightweight dependency framework
 gh-repo: ivlevAstef/DITranquillity

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: list
 title: Universal JSONDecoder
 subtitle: Handling several cases in json keys simultaneously
 gh-repo: Nekitosss/AnyCodingKey
