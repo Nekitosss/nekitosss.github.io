@@ -63,7 +63,7 @@ permalink:             pretty
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
-paginate_path:         /page-:num/
+paginate_path:         /lifestyle/page-:num/
 
 
 # Customizaton
