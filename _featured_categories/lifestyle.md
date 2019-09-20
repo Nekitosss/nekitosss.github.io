@@ -1,8 +1,15 @@
 ---
-layout: blog
-title:  Lifestyle
-slug:   lifestyle
+layout: list
+title: Lifestyle
+slug: lifestyle
 menu: true
+order: 2
 description: >
-  Blog about traveling and other stuff
+  Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.
+  It’s based on Poole, the Jekyll butler.
+  Open `_featured_tags/hyde.md` to edit this text.
+accent_color: rgb(38,139,210)
+accent_image:
+  background: 'linear-gradient(to bottom, rgba(35,62,76,1) 0%,rgba(60,146,158,1) 50%,rgba(213,213,212,1) 100%) #4fb1ba'
+  overlay:    false
 ---

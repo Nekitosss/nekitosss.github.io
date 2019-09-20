@@ -1,5 +1,5 @@
 ---
-layout: list
+layout: page
 title: Whats behind swift generic system?
 subtitle: Swift under the hood
 tags: [swift, iOS, foundation]
