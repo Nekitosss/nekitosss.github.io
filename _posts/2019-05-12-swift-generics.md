@@ -62,9 +62,9 @@ test(value: myStruct) // Source code
 test(value: myStruct, tMetadata: Int.metadata) // Something like this is compiled
 ```
 
-Когда мы комбинируем информацию, мы получаем метаданные, с которыми можно работать (копировать, перемещать, уничтожать).
+When we combine information, we get metadata to work (copy, move, destroy).
 
-Всё ещё немного сложнее, когда на дженерики добавляются ограничения в виде протоколов. К примеру, ограничим `<T>` протоколом `Equatable`. Пусть это будет очень простой метод, который сравнивает два переданных аргумента. Получится просто обёртка над методом сравнения.
+Things get a little bit more complicated when protocol constraints added to generics. For example, lets constraint `<T>` with `Equatable` protocol. Its gonna be very simple comparing method, just wrapper above default `Equatable`.
 
 ```swift
 func isEquals<T: Equatable>(first: T, second: T) -> Bool {
