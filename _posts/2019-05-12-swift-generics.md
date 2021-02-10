@@ -4,10 +4,15 @@ title: Whats behind swift generic system?
 subtitle: Swift under the hood
 tags: [swift, iOS, foundation]
 categories: [programming]
+description: >
+  Recap of what generics internally is. 
 comments: true
 ---
 
 > Generic code enables you to write flexible, reusable functions and types that can work with any type, subject to requirements that you define. You can write code that avoids duplication and expresses its intent in a clear, abstracted manner. - **Swift docs**
+
+- Table of Contents
+{:toc .large-only}
 
 Everyone who wrote on Swift used generics. `Array`, `Dictionary`, `Set` are the most basic options for using generics from the standard library. Let's look at how this fundamental language feature is implemented by Apple engineers. Generic parameters can be both bounded to protocols (like in Java or C #) and not bounded, although mostly generics are used in conjunction with protocols that describe what exactly you can do with method parameters or type fields.
 
